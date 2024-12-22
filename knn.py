@@ -14,7 +14,7 @@ class KNN:
         self.X_train = np.array(X_train, dtype=float)
         self.y_train = np.array(y_train)
 
-    def dist_metric(self, x, X_train): # Ini masih harus disesuain lagiii pake hamming + euclidean
+    def dist_metric(self, x, X_train): # Ini masih harus disesuain lagiii pake hamming +
         return np.sqrt(np.sum((X_train - x) ** 2, axis=1))
 
     def predict(self, X_test):
